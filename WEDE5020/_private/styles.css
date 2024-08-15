@@ -31,6 +31,7 @@ nav {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 hr {
@@ -38,8 +39,42 @@ hr {
     color: red; 
 }
 
+p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 p1 {
+    font-family:'Times New Roman', Times, serif;
     color: red;
     margin-top: 15px;
     margin-right: 0px;
+}
+
+img {
+ box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+.no-shadow{
+    box-shadow: none;
+}
+
+.link{
+    color: blue;
+    text-decoration: underline;
+}
+
+.featured-items{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item {
+    text-align: center; /* Centers text under each image */
+    flex: 1 1 calc(50% - 20px); /* Makes items take up 50% of the container width minus the gap, adjusting for responsiveness */
+}
+
+.item img {
+    max-width: 100%; /* Ensures images scale down if needed */
+    height: auto; /* Keeps image aspect ratio */
 }
